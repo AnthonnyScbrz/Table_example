@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5px;
+}
+.table__Table-Content{
+    width: 50%;
+    border-collapse: collapse;
+}
+.table__Table-Content th, td{
+    border: 1px solid black;
+}
+thead{
+    background-color: yellow;
+}
+tbody{
+    background-color: rosybrown;
+}
+.table__Table-Content tbody tr:nth-child(even){
+   background-color: darkgray;
+}
+.table__Table-Content tbody td:nth-child(2)::after{
+    content: ' (Kcal)';
+}
+.table__Table-Content tbody td:nth-child(3)::after,td:nth-child(4)::after,td:nth-child(5)::after{
+    content: ' (g)';
+}
